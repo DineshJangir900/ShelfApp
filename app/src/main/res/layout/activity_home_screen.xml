@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeScreenActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Bookshelf"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_short_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short By"
+                android:textColor="@color/black_222222"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/sp_short_by"
+                app:layout_constraintTop_toBottomOf="@+id/iv_menu" />
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="28dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/baseline_menu_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/check_out"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/sp_short_by"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="6dp"
+                android:background="@color/white"
+                android:elevation="3dp"
+                android:entries="@array/sort_by"
+                android:theme="@style/spinnerTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_ascending"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_short_by" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/btn_ascending"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="6dp"
+                android:background="@color/white"
+                android:elevation="3dp"
+                android:paddingStart="6dp"
+                android:text="Ascending Order"
+                app:layout_constraintBottom_toBottomOf="@+id/sp_short_by"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/sp_short_by"
+                app:layout_constraintTop_toTopOf="@+id/sp_short_by" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_books"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

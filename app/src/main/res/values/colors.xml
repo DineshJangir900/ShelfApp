@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorCyan">#B1FF7A</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="orangeRed">#FF4500</color>
+    <color name="orange">#FFA500</color>
+    <color name="darkOrange">#FF8C00</color>
+    <color name="darkestOrange">#FFFF6600</color>
+    <color name="grey">#D4D4D4</color>
+    <color name="lightYellowBackground">#0FFFEB3B</color>
+    <color name="grey2">#F0ECEC</color>
+    <color name="lightGrey">#fafafa</color>
+    <color name="darkGrey">#747272</color>
+    <color name="skyBlue">#16c9c6</color>
+    <color name="green">#00ff00</color>
+    <color name="darkGreen">#006400</color>
+    <color name="forestGreen">#228B22</color>
+    <color name="grassGreen">#8bbc8b</color>
+    <color name="red">#ff2233</color>
+    <color name="goldYellow">#ffc736</color>
+    <color name="lightYellow">#36FFC736</color>
+    <color name="lightYellow_shade1">#1AFFC736</color>
+    <color name="darkGoldYellow">#ff9a34</color>
+    <color name="textColor">#53004e</color>
+    <color name="navyBlue">#000080</color>
+    <color name="navigation_blue_color">#1081E0</color>
+    <color name="lightBackground">#f9faff</color>
+    <color name="lightGreen">#d2f8d2</color>
+    <color name="lightGreenBackground">#5B05BF05</color>
+    <color name="payment_back_color">#F4F8FB</color>
+    <color name="payment_text_color">#18DE8A</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="orange_shade_1">#f65606</color>
+    <color name="orange_shade_2">#B34006</color>
+    <color name="orange_shade_3">#f67406</color>
+    <color name="orange_shade_4">#e07627</color>
+    <color name="green_text_color">#00cc00</color>
+
+    <color name="red_shade_1">#cc0000</color>
+    <color name="red_shade_2">#ffcccb</color>
+
+    <color name="white_bg">#F5F5F5</color>
+    <color name="red_bg">#FF6347</color>
+    <color name="light_green_bg">#d2f8d2</color>
+
+    <color name="grey_shade_3">#666666</color>
+    <color name="shadow">#1e000000</color>
+    <color name="orangered">#FF4500</color>
+    <color name="black_shade_1">#1a1a1a</color>
+    <color name="blue_shade_2">#3d46ce</color>
+    <color name="white_smoke">#F5F5F5</color>
+
+    <color name="black_222222">#222222</color>
+    <color name="blue_00ade6">#00ade6</color>
+    <color name="light_gray_a9a9a9">#a9a9a9</color>
+    <color name="paytm_blue">#0000FF</color>
+</resources>
